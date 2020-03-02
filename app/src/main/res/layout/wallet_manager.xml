@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/wallet_mywallet"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="wallet code"
+        android:textSize="14sp"
+        android:singleLine="true"
+        android:textCursorDrawable="@drawable/cursor_edit_text"
+        android:maxLength="35"
+        android:inputType="text|textCapSentences|textNoSuggestions"/>
+
+    <EditText
+        android:id="@+id/wallet_gasprice"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gas price"
+        android:textSize="14sp"
+        android:singleLine="true"
+        android:textCursorDrawable="@drawable/cursor_edit_text"
+        android:maxLength="35"
+        android:inputType="text|textCapSentences|textNoSuggestions"
+        android:layout_below="@+id/wallet_mywallet"/>
+
+    <EditText
+        android:id="@+id/wallet_gaslimit"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gas limit"
+        android:textSize="14sp"
+        android:singleLine="true"
+        android:textCursorDrawable="@drawable/cursor_edit_text"
+        android:maxLength="35"
+        android:inputType="text|textCapSentences|textNoSuggestions"
+        android:layout_below="@+id/wallet_gasprice"/>
+
+    <EditText
+        android:id="@+id/wallet_currentamount"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Current Amount"
+        android:textSize="14sp"
+        android:singleLine="true"
+        android:textCursorDrawable="@drawable/cursor_edit_text"
+        android:maxLength="35"
+        android:inputType="text|textCapSentences|textNoSuggestions"
+        android:layout_below="@+id/wallet_gaslimit"/>
+
+    <EditText
+        android:id="@+id/wallet_smartcontractaddress"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Smart Contract Address"
+        android:textSize="14sp"
+        android:singleLine="true"
+        android:textCursorDrawable="@drawable/cursor_edit_text"
+        android:maxLength="35"
+        android:inputType="text|textCapSentences|textNoSuggestions"
+        android:layout_below="@+id/wallet_currentamount"/>
+
+
+
+</RelativeLayout>

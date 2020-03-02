@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="?android:attr/windowBackground">
+
+    <ImageView
+        android:id="@+id/fragform_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@drawable/icon_refresh"/>
+
+    <ImageView
+        android:id="@+id/fragform_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp" />
+
+    <TextView
+        android:id="@+id/fragform_uuid"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/fragform_icon"
+        android:layout_centerHorizontal="true"
+        android:text="0x9783988EdC5fD2AFbad7A6db11ddFe9e88790Cbf"
+        android:gravity="center"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:background="@drawable/oval_button"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:layout_marginBottom="35dp"
+        />
+
+    <TextView
+        android:id="@+id/fragform_uploadmedicalrecord"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/fragform_uuid"
+        android:layout_centerHorizontal="true"
+        android:text="Upload Medical Record"
+        android:gravity="center"
+        android:background="@drawable/oval_button2"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:layout_marginBottom="35dp"/>
+
+    <TextView
+        android:id="@+id/fragform_entermedicalinfo"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/fragform_uploadmedicalrecord"
+        android:layout_centerHorizontal="true"
+        android:text="Enter Medical Info"
+        android:gravity="center"
+        android:background="@drawable/oval_button3"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:layout_marginBottom="35dp"
+        />
+
+    <TextView
+        android:id="@+id/fragform_upload23andme"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/fragform_entermedicalinfo"
+        android:layout_centerHorizontal="true"
+        android:text="Upload DNA test (23andMe, etc)"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:background="@drawable/oval_button4"/>
+
+    <TextView
+        android:id="@+id/fragform_textviewwallet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragform_upload23andme"
+        android:layout_marginBottom="25dp"
+        android:layout_centerHorizontal="true"
+        android:text="Current ETH:"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/fragform_edittext"
+        android:layout_below="@+id/fragform_textviewwallet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"/>
+
+    <TextView
+        android:id="@+id/fragform_recieved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragform_edittext"
+        android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>

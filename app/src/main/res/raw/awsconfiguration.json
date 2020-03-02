@@ -1,0 +1,29 @@
+{
+    "IdentityManager": {
+        "Default": {}
+    },
+    "CredentialsProvider": {
+        "CognitoIdentity": {
+            "Default": {
+                "PoolId": "us-east-1:785e7abf-7310-4bb9-9192-4ea612793769",
+                "Region": "us-east-1"
+            }
+        }
+    },
+    "CognitoUserPool": {
+        "Default": {
+            "PoolId": "us-east-1_qwFCyGqRE",
+            "AppClientId": "dae2ucpo7o9aptkk6ec8and8u",
+            "AppClientSecret": "6nf81te6qpfbkh0gc7hguooihl02fje8u2m371del26jghvsmu9",
+            "Region": "us-east-1"
+        }
+    },
+
+        "S3TransferUtility":{
+            "Default": {
+                "Bucket":"worldblockchain-bucket1",
+                "Region": "us-east-1"
+            }
+        }
+    }
+}

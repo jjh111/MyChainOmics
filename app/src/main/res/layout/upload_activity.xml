@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/uploadactivity_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/uploadactivity_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/icon_refresh"
+                android:paddingLeft="16dp"
+                android:paddingEnd="16dp"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/uploadactivity_rel1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/uploadactivity_toolbar"
+        android:background="@drawable/patient_form_edittext_border">
+
+        <EditText
+            android:id="@+id/fragform_uniquepatientid"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Unique Patient ID"
+            android:textSize="14sp"
+            android:background="@null"
+            android:singleLine="true"
+            android:textCursorDrawable="@drawable/cursor_edit_text"
+            android:maxLength="35"
+            android:inputType="text|textCapSentences|textNoSuggestions"
+            />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/uploadactivity_rel2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/uploadactivity_rel1"
+        android:background="@drawable/patient_form_edittext_border">
+
+        <EditText
+            android:id="@+id/fragform_uniquecontentid"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Unique Content ID"
+            android:textSize="14sp"
+            android:background="@null"
+            android:singleLine="true"
+            android:textCursorDrawable="@drawable/cursor_edit_text"
+            android:maxLength="35"
+            android:inputType="text|textCapSentences|textNoSuggestions"
+            />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

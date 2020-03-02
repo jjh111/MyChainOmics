@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="?android:attr/windowBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:contentInsetStart="0dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/form_xicon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/icon_black_back_arrow"
+                android:layout_centerVertical="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:background="?attr/selectableItemBackground"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:text="Medical History Form"
+                android:textColor="@color/standardBlue"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/fragform_nextpage"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/icon_blue_check"
+                android:layout_alignParentEnd="true"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:background="?attr/selectableItemBackground"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dividerColor"
+        />
+
+    <ScrollView
+        android:id="@+id/testScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusableInTouchMode="true"
+            >
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/patient_form_edittext_border"
+
+                >
+
+                <EditText
+                    android:id="@+id/fragform_name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Age/Gender"
+                    android:textSize="14sp"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@drawable/cursor_edit_text"
+                    android:maxLength="35"
+                    android:inputType="text|textCapSentences|textNoSuggestions"
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/patient_form_edittext_border"
+                >
+
+                <EditText
+                    android:id="@+id/fragform_age"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="A/S/L"
+                    android:textSize="14sp"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@drawable/cursor_edit_text"
+                    android:maxLength="35"
+                    android:inputType="text|textCapSentences|textNoSuggestions"
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/patient_form_edittext_border"
+                >
+
+
+                <EditText
+                    android:id="@+id/fragform_medications"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Medical History"
+                    android:textSize="14sp"
+                    android:background="@null"
+                    android:gravity="bottom"
+                    android:textCursorDrawable="@drawable/cursor_edit_text"
+                    android:inputType="text|textMultiLine|textNoSuggestions|textCapSentences"
+                    android:maxLength="150"
+                    />
+
+
+            </RelativeLayout>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/dividerColor"
+                android:layout_marginTop="15dp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingLeft="15dp"
+                >
+
+                <TextView
+                    android:id="@+id/textview_health_assessment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Health Assessment"
+                    android:textColor="@color/standardBlue"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/fragform_textview_problem"
+
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="Presenting Problem/Complaint"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"/>
+
+                <EditText
+                    android:id="@+id/fragform_edittext_problem"
+                    android:layout_toRightOf="@+id/fragform_textview_problem"
+                    android:textSize="14sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="15dp"
+                    android:textCursorDrawable="@drawable/cursor_edit_text"
+                    android:inputType="textNoSuggestions|textVisiblePassword"
+                    android:layout_alignParentBottom="true"
+                    android:hint="Dizziness, shortness of breath, chest pressure, pain pressure, pain in left/right arm"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/fragform_textview_history"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="Psychiatric History"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"/>
+
+                <EditText
+                    android:id="@+id/fragform_edittext_history"
+                    android:layout_toRightOf="@+id/fragform_textview_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="15dp"
+                    android:textSize="14sp"
+                    android:textCursorDrawable="@drawable/cursor_edit_text"
+                    android:inputType="textNoSuggestions|textVisiblePassword"
+                    android:layout_alignParentBottom="true"
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+                <TextView
+                    android:id="@+id/fragform_textview_risk"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="Past Primary Risk/Propensities"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"/>
+                <EditText
+                    android:id="@+id/fragform_edittext_risk"
+                    android:layout_toRightOf="@id/fragform_textview_risk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="15dp"
+                    android:textSize="14sp"
+                    android:textCursorDrawable="@drawable/cursor_edit_text"
+                    android:inputType="textNoSuggestions|textVisiblePassword"
+                    android:layout_alignParentBottom="true"
+                    />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/dividerColor"
+                android:layout_marginTop="15dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/selectMeetingDays">
+
+                <TextView
+                    android:id="@+id/selectMeetingDaysText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Languages"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp" />
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="15dp"
+                >
+
+                <TextView
+                    android:id="@+id/textview_spanish"
+                    android:layout_width="50dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_height="match_parent"
+                    android:text="Spanish"
+                    android:textSize="11sp"
+                    android:background="@drawable/language_unchecked"
+                    android:layout_marginLeft="15dp"/>
+
+                <TextView
+                    android:id="@+id/textview_arabic"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Arabic"
+                    android:textSize="11sp"
+                    android:background="@drawable/language_unchecked"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/textview_spanish"/>
+
+                <TextView
+                    android:id="@+id/textview_mandarin"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Mandarin"
+                    android:textSize="11sp"
+                    android:background="@drawable/language_unchecked"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/textview_arabic"/>
+
+                <TextView
+                    android:id="@+id/textview_bengali"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Bengali"
+                    android:textSize="11sp"
+                    android:background="@drawable/language_unchecked"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/textview_mandarin"/>
+
+                <TextView
+                    android:id="@+id/textview_other"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Other"
+                    android:textSize="11sp"
+                    android:background="@drawable/language_unchecked"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/textview_bengali"
+                    />
+
+
+
+                <ImageView
+                    android:id="@+id/moreLanguages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/icon_horizontal_dots"
+                    android:layout_toEndOf="@+id/textview_other"
+                    android:layout_marginStart="15dp"
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout1"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:id="@+id/fragform_textview_immune"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="Are you immunized?"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"/>
+
+                <EditText
+                    android:id="@+id/fragform_edittext_immune"
+                    android:layout_toRightOf="@+id/fragform_textview_immune"
+                    android:textSize="14sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="15dp"
+                    android:inputType="textNoSuggestions|textVisiblePassword"
+                    android:layout_alignParentBottom="true"
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout2"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:id="@+id/fragform_textview_travel"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="Travel history"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"/>
+
+                <EditText
+                    android:id="@+id/fragform_edittext_travel"
+                    android:layout_toRightOf="@+id/fragform_textview_travel"
+                    android:textSize="14sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="15dp"
+                    android:inputType="textNoSuggestions|textVisiblePassword"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout3"
+                android:layout_marginBottom="15dp"
+                >
+
+                <TextView
+                    android:id="@+id/fragform_textview_sleep"
+
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="Disabilities"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"/>
+
+                <EditText
+                    android:id="@+id/fragform_edittext_sleep"
+                    android:layout_toRightOf="@+id/fragform_textview_sleep"
+                    android:textSize="14sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="15dp"
+                    android:inputType="textNoSuggestions|textVisiblePassword"
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout4"
+                android:layout_marginBottom="15dp"
+                >
+
+                <TextView
+                    android:id="@+id/fragform_textview_conditions"
+
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="Family Conditions"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"/>
+
+                <EditText
+                    android:id="@+id/fragform_edittext_family"
+                    android:layout_toRightOf="@+id/fragform_textview_conditions"
+                    android:textSize="14sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="15dp"
+                    android:inputType="textNoSuggestions|textVisiblePassword"
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout5"
+                android:layout_marginBottom="15dp"
+                >
+
+                <TextView
+                    android:id="@+id/fragform_textview_insurance"
+
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="Insurance"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"/>
+
+                <EditText
+                    android:id="@+id/fragform_edittext_insurance"
+                    android:layout_toRightOf="@+id/fragform_textview_insurance"
+                    android:textSize="14sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="15dp"
+                    android:inputType="textNoSuggestions|textVisiblePassword"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout6"
+                android:layout_marginBottom="15dp"
+                >
+
+                <TextView
+                    android:id="@+id/fragform_textview_allergies"
+
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="Known Allergies"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"/>
+
+                <EditText
+                    android:id="@+id/fragform_edittext_allergies"
+                    android:layout_toRightOf="@+id/fragform_textview_allergies"
+                    android:textSize="14sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="15dp"
+                    android:inputType="textNoSuggestions|textVisiblePassword"
+                    android:layout_alignParentBottom="true"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout7"
+                android:layout_marginBottom="15dp"
+                >
+
+                <TextView
+                    android:id="@+id/fragform_textview_interest"
+
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="Conflict of interest"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    />
+
+                <EditText
+                    android:id="@+id/fragform_edittext_interest"
+                    android:layout_toRightOf="@+id/fragform_textview_interest"
+                    android:textSize="14sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="15dp"
+                    android:inputType="textNoSuggestions|textVisiblePassword"
+                    android:layout_alignParentBottom="true"
+                    android:hint="it's never lupus"/>
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>
